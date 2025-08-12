@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CTF Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div id="particles"></div>
+  <div class="scanlines"></div>
+
+  <main>
+    <form class="form-glass" id="ctfRegister" autocomplete="off" novalidate>
+      <h2>Register</h2>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" required placeholder=" " />
+
+      <label for="regEmail">Email</label>
+      <input type="email" id="regEmail" required placeholder=" " />
+
+      <label for="regPassword">Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="regPassword" required placeholder=" " />
+        <span class="eye-icon" id="toggleRegPassword" tabindex="0" role="button" aria-label="Toggle password visibility">
+          <!-- Eye open -->
+          <svg id="eyeOpenReg" viewBox="0 0 22 22" width="16" height="16" fill="none" stroke="#FFD600" stroke-width="2.1">
+            <ellipse cx="11" cy="11" rx="8" ry="6" />
+            <circle cx="11" cy="11" r="2.6" fill="#FFD600" />
+          </svg>
+          <!-- Eye closed -->
+          <svg id="eyeClosedReg" viewBox="0 0 22 22" width="16" height="16" fill="none" stroke="#FFD600" stroke-width="2.1" style="display:none">
+            <ellipse cx="11" cy="11" rx="8" ry="6" />
+            <circle cx="11" cy="11" r="2.6" fill="#FFD600" />
+            <line x1="5" y1="5" x2="17" y2="17" stroke="#FFD600" stroke-width="2.3" stroke-linecap="round" />
+          </svg>
+        </span>
+      </div>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="confirmPassword" required placeholder=" " />
+        <span class="eye-icon" id="toggleConfirmPassword" tabindex="0" role="button" aria-label="Toggle password visibility">
+          <!-- Eye open -->
+          <svg id="eyeOpenConfirm" viewBox="0 0 22 22" width="16" height="16" fill="none" stroke="#FFD600" stroke-width="2.1">
+            <ellipse cx="11" cy="11" rx="8" ry="6" />
+            <circle cx="11" cy="11" r="2.6" fill="#FFD600" />
+          </svg>
+          <!-- Eye closed -->
+          <svg id="eyeClosedConfirm" viewBox="0 0 22 22" width="16" height="16" fill="none" stroke="#FFD600" stroke-width="2.1" style="display:none">
+            <ellipse cx="11" cy="11" rx="8" ry="6" />
+            <circle cx="11" cy="11" r="2.6" fill="#FFD600" />
+            <line x1="5" y1="5" x2="17" y2="17" stroke="#FFD600" stroke-width="2.3" stroke-linecap="round" />
+          </svg>
+        </span>
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <p class="message" id="registerMsg"></p>
+
+      <p class="register-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+    </form>
+  </main>
+
+  <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.input-container {
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: none;
+  caret-color: transparent;
+}
+
+.input-caret {
+  position: absolute;
+  pointer-events: none;
+}
+
+.input-caret.small-text {
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .input-caret.small-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input-caret.small-text {
+    font-size: 20px;
+  }
+}
+
+.input-caret.large-text {
+  font-size: 48px;
+}
+
+@media (min-width: 640px) {
+  .input-caret.large-text {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input-caret.large-text {
+    font-size: 64px;
+  }
+}
+
+.input-caret.blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

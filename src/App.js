@@ -1,10 +1,10 @@
 import './App.css';
-import { QuestionPage } from './components/question';
+import Leaderboard from './components/Leaderboard';
 
 function App() {
   return (
     <div className="App">
-      <QuestionPage />
+      <Leaderboard/>
     </div>
   );
 }
